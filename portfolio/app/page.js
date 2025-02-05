@@ -1,13 +1,15 @@
-// app/page.js
+"use client"; // Mark this file as a Client Component
 
-"use client"; // If you plan to do any client-side interaction, 
-              // though strictly for a static page it's not mandatory.
+import dynamic from 'next/dynamic';
 
-export default function Home() {
+const Scene = dynamic(() => import('@/components/Scene'), {
+  ssr: false,
+});
+
+export default function Hero() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
-      <h1 className="text-4xl font-bold mb-8">Sebastian R. Rojas</h1>
-
+    <main className="relative h-screen">
+      <Scene />
     </main>
   );
 }
