@@ -1,15 +1,16 @@
-"use client"; // Mark this file as a Client Component
+"use client";
 
-import dynamic from 'next/dynamic';
+import styles from './page.module.css'
+import dynamic from 'next/dynamic'
 
-const Scene = dynamic(() => import('@/components/Scene'), {
-  ssr: false,
-});
+const Scene = dynamic(() => import('../components/Scene'), {
+    ssr: false,
+})
 
-export default function Hero() {
+export default function Home() {
   return (
-    <main className="relative h-screen">
-      <Scene />
+    <main className={styles.main}>
+        <Scene />
     </main>
-  );
+  )
 }

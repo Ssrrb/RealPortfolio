@@ -1,0 +1,7 @@
+/* app/page.module.css */
+.main {
+    width: 100vw;
+    height: 100vh;
+    position: relative; /* Important for absolutely positioned canvas */
+    overflow: hidden;   /* Prevent scrollbars if the canvas is larger */
+  }

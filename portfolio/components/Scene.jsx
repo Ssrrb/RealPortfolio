@@ -1,18 +1,12 @@
-"use client";
+'use client';
+import { Canvas } from '@react-three/fiber'
+import { Environment } from '@react-three/drei'
 
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
-import Model from "./Model";
-
-export default function Scene() {
+export default function Index() {
   return (
-    <Canvas>
-      <Suspense fallback={null}>
-        <Model />
-        <Environment preset="sunset" />
-      </Suspense>
+    <Canvas style={{background: '#000000'}}>
+        <directionalLight intensity={2} position={[0, 2, 3]}/>
+        <Environment preset="city" />
     </Canvas>
-  );
+  )
 }
-
