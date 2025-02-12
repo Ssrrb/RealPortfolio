@@ -5,9 +5,9 @@ import Model from './Model'; // Import your Model component
 
 export default function Index() {
   return (
-    <Canvas style={{ background: '#000000' }}>
+    <Canvas style={{ background: '#ffffff' }}>
       <directionalLight intensity={2} position={[0, 2, 3]} />
-      <Environment preset="city" />
+      <Environment preset="sunset" />
       <Model /> {/* Add the Model to the scene */}
     </Canvas>
   );
