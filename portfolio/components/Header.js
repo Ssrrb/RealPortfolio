@@ -10,7 +10,7 @@ export default function Header() {
             <Image
               src="/signature.png"
               alt="Signature"
-              width={220}
+              width={200}
               height={85}
               className="object-contain w-32 sm:w-40 md:w-52"
             />
