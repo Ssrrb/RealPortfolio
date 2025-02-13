@@ -1,24 +1,23 @@
-// components/Header.js
 import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-white shadow mx-24 my-0">
-      <div className="container mx-auto px-6 py-3">
+    <header className="bg-white shadow">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          <div>
-            <a href="#">
-              <Image
-                src="/signature.png"
-                alt="Signature"
-                width={220}
-                height={85}
-                className="object-contain"
-              />
-            </a>
-          </div>
+          {/* Logo */}
+          <a href="#">
+            <Image
+              src="/signature.png"
+              alt="Signature"
+              width={220}
+              height={85}
+              className="object-contain w-32 sm:w-40 md:w-52"
+            />
+          </a>
 
-          <nav className="space-x-8 text-gray-800 text-base lg:text-lg">
+          {/* Navigation */}
+          <nav className="flex space-x-4 sm:space-x-6 text-gray-800 text-xs sm:text-base md:text-lg">
             <a className="hover:text-gray-600" href="#">
               Projects
             </a>

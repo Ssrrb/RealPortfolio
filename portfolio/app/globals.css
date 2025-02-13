@@ -34,3 +34,10 @@ a {
 a:hover {
   color: #000000; /* Black on hover */
 }
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('/medias/NeueMontreal-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+

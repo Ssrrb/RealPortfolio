@@ -22,16 +22,19 @@ import React, { useRef } from 'react';
         })
 
         useFrame( () => {
-            torus.current.rotation.x += 0.015
-            torus.current.rotation.y += 0.015
+            torus.current.rotation.x += 0.01
+            torus.current.rotation.y += 0.01
         })
 
         return (
-            <group scale={viewport.width/10} >
-                <Text  fontSize={0.7} color="black">
-                    Sebastian R. Rojas
+            <group scale={viewport.width/13} >
+                <Text fontSize={0.2} color="gray" position={[0, 1.5, 0]} style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}>
+                    SOFTWARE ENGINEER
                 </Text>
-                <mesh scale={0.00001} ref={torus} {...nodes.Cube} position={[0,0,0]}>
+                <Text fontSize={1} color="black" style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}>
+                    SEBASTIAN ROJAS
+                </Text>
+                <mesh ref={torus} {...nodes.Cube} geometry={nodes.Cube.geometry} position={[0,0,0]}>
                     <MeshTransmissionMaterial {...materialProps}/>
                 </mesh>
             </group>
