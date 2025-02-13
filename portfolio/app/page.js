@@ -1,16 +1,21 @@
 "use client";
 
-import styles from './page.module.css'
-import dynamic from 'next/dynamic'
+import styles from './page.module.css';
+import dynamic from 'next/dynamic';
+
 
 const Scene = dynamic(() => import('../components/Scene'), {
-    ssr: false,
-})
+  ssr: false,
+});
+const Projects = dynamic(() => import('../components/Projects'), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
     <main className={styles.main}>
-        <Scene />
+      <Scene />
+      <Projects />
     </main>
-  )
+  );
 }
