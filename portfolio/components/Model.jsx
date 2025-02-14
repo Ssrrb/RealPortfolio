@@ -28,10 +28,10 @@ import React, { useRef } from 'react';
 
         return (
             <group scale={viewport.width/13} >
-                <Text fontSize={0.2} color="gray" position={[0, 1.5, 0]} style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}>
+                <Text fontSize={0.2} color="gray" position={[0, 1.5, 0]} style={{ fontWeight: 'bold', fontStyle: 'italic', fontSize: '0.75rem', fontWeight: '600', color: 'rgb(107 114 128)', marginBottom: '0.25rem' }}>
                     SOFTWARE ENGINEER
                 </Text>
-                <Text fontSize={0.8} color="black" style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}>
+                <Text fontSize={0.9} color="black" style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}>
                     SEBASTIAN ROJAS
                 </Text>
                 <mesh ref={torus} {...nodes.Cube} geometry={nodes.Cube.geometry} position={[0,0,0]}>

@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Projects from "../components/Projects"
 const Scene = dynamic(() => import("../components/Scene"), {
   ssr: false,
+  loading: () => <p>Loading...</p> // Optional: Add a loading indicator
 });
 
 
@@ -19,6 +20,11 @@ export default function Home() {
 
       {/* Projects Section */}
       <div id="projects-section" className="w-full py-10">
+      <header className="flex items-center justify-center py-5 border-b border-gray-200">
+      </header>
+      <header className="flex items-center justify-center py-5 border-b border-gray-200">
+      <h1 className="text-xl font-semibold tracking-wide">PROJECTS</h1>
+      </header>
         <Projects />
       </div>
 

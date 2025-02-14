@@ -2,6 +2,7 @@
 import { GeistSans, GeistMono } from "geist/font";
 import "./globals.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Sebastian R. Rojas - Portfolio",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <main className="mx-auto">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

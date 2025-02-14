@@ -1,34 +1,63 @@
+// pages/Projects.jsx
+
+import React from 'react'
 import Image from 'next/image'
 
 export default function Projects() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-gray-900">
-      {/* Header */}
-      <header className="flex items-center justify-center py-4 border-b border-gray-200">
-      </header>
-      <header className="flex items-center justify-center py-4 border-b border-gray-200">
-      <h1 className="text-xl font-semibold tracking-wide">PROJECTS</h1>
-      </header>
+    <section className="w-full bg-white py-12 px-4 md:py-16 md:px-8 lg:px-16">
+      <div className="container mx-auto px-4 lg:px-8 py-12 md:py-16">
+        {/* Use a responsive grid: single column on mobile, two columns on larger screens */}
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12">
+          
+          {/* Left Column */}
+          <div className="flex flex-col">
+            {/* Small subheading */}
+            <p className="text-sm font-semibold text-gray-500 mb-1">Google</p>
+            
+            {/* Main heading */}
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Certification
+            </h1>
+            
+            {/* Tag list */}
+            <div className="flex flex-wrap gap-2 mb-6">
+              <span className="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                Cloud
+              </span>
+              <span className="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                CI/CD
+              </span>
+              <span className="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                Kubernetes
+              </span>
+              <span className="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                Machine Learning
+              </span>
+              <span className="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                Big Data
+              </span>
+            </div>
 
-      {/* Main Content */}
-      <main className="flex-grow flex flex-col items-center justify-center px-4 py-10 md:px-8">
-        {/* Title / Subtitle */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          No More Lonely Battles
-        </h2>
-        <p className="text-base md:text-lg text-center max-w-xl mb-6">
-          A short description or tagline can go here. Provide context for your app or project.
-        </p>
+            {/* Call-to-action button */}
+            <a href="https://www.credly.com/badges/481045c7-3588-4e12-906f-e24610f71981/public_url" target="_blank" rel="noopener noreferrer" className="w-fit bg-black text-white py-2 px-6 rounded font-medium hover:bg-gray-800 transition">
+              View Cert
+              </a>
+          </div>
 
-        {/* Call-to-action Button */}
-        <button className="px-6 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 mb-8">
-          Download
-        </button>
+          {/* Right Column: Phone mockup */}
+          <div className="flex justify-center md:justify-end">
+            <Image
+              src="/medias/certification.png"
+              alt="Certification"
+              width={400}
+              height={600}
+              className="w-auto h-auto max-w-full"
+            />
+          </div>
 
-        {/* Mockup Image */}
-        <div className="w-full max-w-sm md:max-w-md lg:max-w-lg">
         </div>
-      </main>
-    </div>
+      </div>
+    </section>
   )
 }
