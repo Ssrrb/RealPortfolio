@@ -22,8 +22,8 @@ import React, { useRef } from 'react';
         })
 
         useFrame( () => {
-            torus.current.rotation.x += 0.01
-            torus.current.rotation.y += 0.01
+            torus.current.rotation.x += 0.005
+            torus.current.rotation.y += 0.005
         })
 
         return (
@@ -31,7 +31,7 @@ import React, { useRef } from 'react';
                 <Text fontSize={0.2} color="gray" position={[0, 1.5, 0]} style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}>
                     SOFTWARE ENGINEER
                 </Text>
-                <Text fontSize={1} color="black" style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}>
+                <Text fontSize={0.8} color="black" style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}>
                     SEBASTIAN ROJAS
                 </Text>
                 <mesh ref={torus} {...nodes.Cube} geometry={nodes.Cube.geometry} position={[0,0,0]}>

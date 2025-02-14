@@ -1,7 +1,20 @@
 /* app/page.module.css */
 .main {
-    width: 100vw;
-    height: 100vh;
-    position: relative; /* Important for absolutely positioned canvas */
-    overflow: hidden;   /* Prevent scrollbars if the canvas is larger */
-  }
+  width: 100vw;
+  position: relative; /* Important for absolutely positioned canvas */
+  overflow: hidden;   /* Prevent scrollbars if the canvas is larger */
+}
+
+#hero-section {
+  width: 100%;
+  /* Ensure it takes full width */
+  margin: 0; /* Reset any default margins */
+  padding: 0; /* Reset any default paddings */
+}
+
+#projects-section {
+  width: 100%;
+  padding: 20px;
+  /* Add padding for better readability */
+  margin: 0;
+}

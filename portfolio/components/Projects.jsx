@@ -5,7 +5,9 @@ export default function Projects() {
     <div className="min-h-screen flex flex-col bg-white text-gray-900">
       {/* Header */}
       <header className="flex items-center justify-center py-4 border-b border-gray-200">
-        <h1 className="text-xl font-semibold tracking-wide">PROJECTS</h1>
+      </header>
+      <header className="flex items-center justify-center py-4 border-b border-gray-200">
+      <h1 className="text-xl font-semibold tracking-wide">PROJECTS</h1>
       </header>
 
       {/* Main Content */}

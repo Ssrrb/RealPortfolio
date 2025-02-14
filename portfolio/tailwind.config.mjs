@@ -13,6 +13,9 @@ export default {
       lg:"1200px",
     },
     extend: {
+      fontFamily: {
+        'sans': ['Inter', 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
