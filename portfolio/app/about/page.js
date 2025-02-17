@@ -17,8 +17,8 @@ export default function About() {
             Sebastian Rojas
           </h1>
           <p className="text-base md:text-lg text-gray-700 max-w-2xl">
-          I’m Sebastian Rojas, a Systems Analysis student at Universidad Católica de Asunción and a full-time AI practitioner. 
-          My passion lies in building software solutions that solve real-world problems.
+          I’m Sebastian Rojas, a Systems Analysis student at Universidad Católica de Asunción,
+           I also work at the intersection of software, automation, and AI-driven solutions.
           </p>
         </div>
 
@@ -35,21 +35,21 @@ export default function About() {
             <AccordionContent className="pb-4 text-gray-700">
               <p>
                 {/* Place your background text here. For example: */}
-                Born and raised in Asunción, Paraguay, I’ve always been driven by the idea that technology can create massive change. My turning point came when I realized that a well-designed algorithm can scale beyond a single problem—impacting entire industries, communities, and economies. 
-                That’s why I pursued AI: not just for its complexity, but for its potential to solve problems at a global scale
+                Born and raised in Asunción, Paraguay, I’ve always been driven by problem-solving and meaningful impact. My perspective shifted when I realized that technology is where algorithms meet people. 
+                The right innovation, built by the right minds, doesn’t just fix a problem—it scales, transforms industries, and empowers communities
               </p>
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="design-philosophy">
             <AccordionTrigger className="py-3 text-lg font-medium text-left border-b border-gray-300 flex justify-between items-center">
-              Work Philosophy -- What do I do?
+            How I Build and Think
             </AccordionTrigger>
             <AccordionContent className="pb-4 text-gray-700">
               <p>
                 {/* Place your design philosophy text here. */}
-                I believe the best creators aren’t just thinkers they are builders. Great ideas mean nothing without execution.
-                That’s why I push myself to be a student and a practitioner experimenting, and iterating. Action creates progress, and the only way to learn something deeply is to build it, break it, and refine it.
+                The best creators aren’t just thinkers—they are also builders. Even the greatest ideas are worthless without execution. That’s why I stay both a student and worker experimenting, iterating, and refining. 
+                The only way to truly learn is to build, break, and rebuild.
 
               </p>
             </AccordionContent>
@@ -57,16 +57,16 @@ export default function About() {
 
           <AccordionItem value="things-i-love">
             <AccordionTrigger className="py-3 text-lg font-medium text-left border-b border-gray-300 flex justify-between items-center">
-              Why does it Matter?
+            Technology, People, and Impact
             </AccordionTrigger>
             <AccordionContent className="pb-4 text-gray-700">
               <p>
                 {/* Place your 'things I love' text here. */}
-                I want to work with excellent people who challenge me—those high in integrity, energy, and intelligence. My mission is to solve real-world problems, helping businesses and my country adopt top tier technology: AI and data-driven strategies that drive growth.
-
-A popular expression is that software is eating the world. A consequence to that is that all companies are technology companies, that means that every company in the world needs to have a machine learning and AI strategy. Part of that strategy is to think more seriously about data as there are always mathematical ways to make value.
-
-But technical skill alone isn’t enough. I believe in strong principles, clear communication, and teamwork. Feel free to reach out whether to collaborate, discuss ideas, or build something meaningful together.
+                Software is transforming every company, and the key to success is rethinking data. 
+                By unlocking value through a data-driven culture of optimization, prediction, and automation, I help businesses—embrace world-class technology. 
+                But beyond technical skills, I value strong principles, clear communication, and teamwork. 
+                If you’re building something ambitious in AI, fintech, or automation and
+                want to connect with someone who challenges the status quo, let’s make it happen.
               </p>
             </AccordionContent>
           </AccordionItem>

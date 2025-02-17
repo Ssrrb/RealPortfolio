@@ -39,7 +39,7 @@ export default function Footer() {
             <p className="text-sm font-semibold text-gray-500 mb-1">Contact</p>
             <ul className="mt-2 space-y-1">
               <li><a href="https://www.linkedin.com/in/sebastian-rojas-28674a303/" className="hover:underline">LinkedIn↗</a></li>
-              <li><a href="#" className="hover:underline">GitHub↗</a></li>
+              <li><a href="https://github.com/Ssrrb" className="hover:underline">GitHub↗</a></li>
               <li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sirsebastianrojas@gmail.com" className="hover:underline">Mail ↗</a></li>
             </ul>
           </div>
