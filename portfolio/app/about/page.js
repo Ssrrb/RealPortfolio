@@ -8,7 +8,7 @@ import {
 
 export default function About() {
   return (
-    <main className="min-h-screen p-4 md:p-8 bg-white text-black">
+    <main className="min-h-screen flex flex-col justify-center items-center px-4 py-8 bg-white text-black ">
       {/* Main content */}
       <section className="container mx-auto px-4 py-8">
         {/* Title & Subtitle */}
@@ -32,7 +32,7 @@ export default function About() {
             <AccordionTrigger className="py-3 text-lg font-medium text-left border-b border-gray-300 flex justify-between items-center">
               Background
             </AccordionTrigger>
-            <AccordionContent className="pb-4 text-gray-700">
+            <AccordionContent className="text-base md:text-lg text-gray-700 max-w-2xl">
               <p>
                 {/* Place your background text here. For example: */}
                 Born and raised in Asunción, Paraguay, I’ve always been driven by problem-solving and meaningful impact. My perspective shifted when I realized that technology is where algorithms meet people. 
@@ -41,11 +41,11 @@ export default function About() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="design-philosophy">
+          <AccordionItem value="my-work">
             <AccordionTrigger className="py-3 text-lg font-medium text-left border-b border-gray-300 flex justify-between items-center">
             How I Build and Think
             </AccordionTrigger>
-            <AccordionContent className="pb-4 text-gray-700">
+            <AccordionContent className="text-base md:text-lg text-gray-700 max-w-2xl">
               <p>
                 {/* Place your design philosophy text here. */}
                 The best creators aren’t just thinkers—they are also builders. Even the greatest ideas are worthless without execution. That’s why I stay both a student and worker experimenting, iterating, and refining. 
@@ -55,11 +55,11 @@ export default function About() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="things-i-love">
+          <AccordionItem value="tech, people and impact">
             <AccordionTrigger className="py-3 text-lg font-medium text-left border-b border-gray-300 flex justify-between items-center">
             Technology, People, and Impact
             </AccordionTrigger>
-            <AccordionContent className="pb-4 text-gray-700">
+            <AccordionContent className="text-base md:text-lg text-gray-700 max-w-2xl">
               <p>
                 {/* Place your 'things I love' text here. */}
                 Software is transforming every company, and the key to success is rethinking data. 
