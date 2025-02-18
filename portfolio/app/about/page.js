@@ -8,7 +8,7 @@ import {
 
 export default function About() {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center px-4 py-8 bg-white text-black ">
+    <main className="min-h-screen p-4 md:p-8 bg-white text-black">
       {/* Main content */}
       <section className="container mx-auto px-4 py-8">
         {/* Title & Subtitle */}
