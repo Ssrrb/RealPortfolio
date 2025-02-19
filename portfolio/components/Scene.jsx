@@ -2,7 +2,6 @@
 import { Canvas } from '@react-three/fiber';
 import { Environment } from '@react-three/drei';
 import Model from './Model'; // Import your Model component
-import { useThree } from '@react-three/fiber';
 import { useEffect, useState } from 'react';
 
 export default function Index() {

@@ -1,16 +1,16 @@
 import React, { useRef } from 'react';
-    import { useGLTF, Text } from "@react-three/drei";
-    import { useFrame, useThree } from '@react-three/fiber';
-    import { MeshTransmissionMaterial } from "@react-three/drei";
-    import * as THREE from 'three';
-    import { useControls } from 'leva';
+import { useGLTF, Text } from "@react-three/drei";
+import { useFrame, useThree } from '@react-three/fiber';
+import { MeshTransmissionMaterial } from "@react-three/drei";
+import * as THREE from 'three';
+import { Leva, useControls } from 'leva';
 
     export default function Model() {
         const { scene, viewport } = useThree();
         const torus = useRef(null);
         const { nodes } = useGLTF("/medias/torrus.glb");
 
-
+        Leva({hidden:true});
         const materialProps = useControls({
             thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
             roughness: { value: 0, min: 0, max: 0, step: 0.1 },
