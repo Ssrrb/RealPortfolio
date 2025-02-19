@@ -1,0 +1,16 @@
+{
+    "Header": {
+        "language" : "Translate",
+        "about" : "About",
+        "CV" : "CV",
+        "Contact": "Contact"
+    },
+    "Projects": {
+          "heading":"PROYECTOS",
+          "subtitle": "Google",
+          "title": "Certificacion",
+          "tags": ["Cloud", "CI/CD", "Kubernetes", "Machine Learning", "Big Data"],
+          "buttonLabel": "Ver Cert"
+        }
+    
+}

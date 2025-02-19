@@ -1,0 +1,37 @@
+{
+    "Header": {
+        "language": "Traducir",
+        "about": "About",
+        "CV": "CV",
+        "Contact": "Contact"
+    },
+    "About": {
+        "heading": "About Page",
+        "name": "Sebastian Rojas",
+        "intro": "I’m Sebastian Rojas, a Systems Analysis student at Universidad Católica de Asunción. I also work at the intersection of software, automation, and AI-driven solutions.",
+        "acc1": "Background",
+        "background": "Born and raised in Asunción, Paraguay, I’ve always been driven by problem-solving and meaningful impact. My perspective shifted when I realized that technology is where algorithms meet people. The right innovation, built by the right minds, doesn’t just fix a problem—it scales, transforms industries, and empowers communities.",
+        "acc2":"How I Build and Think",
+        "how-i":"The best creators aren’t just thinkers—they are also builders. Even the greatest ideas are worthless without execution. That’s why I stay both a student and worker experimenting, iterating, and refining. The only way to truly learn is to build, break, and rebuild.",
+        "acc3": "Technology People and Impact",
+        "tech-p-im":"Software is transforming every company, and the key to success is rethinking data. By unlocking value through a data-driven culture of optimization, prediction, and automation, I help businesses—embrace world-class technology. But beyond technical skills, I value strong principles, clear communication, and teamwork. If you’re building something ambitious in AI, fintech, or automation and want to connect with someone who challenges the status quo, let’s make it happen."
+
+    },
+    "Projects": {
+        "heading": "PROJECTS",
+        "subtitle": "Google",
+        "title": "Certification",
+        "tags": ["Cloud", "CI/CD", "Kubernetes", "Machine Learning", "Big Data"],
+        "buttonLabel": "View Cert"
+    },
+    "Footer": {
+        "contact": "Contact",
+        "linkedIn": "LinkedIn↗",
+        "github": "GitHub↗",
+        "mail": "Mail↗",
+        "proj1": "Cert",
+        "proj2": "Data Pipe",
+        "proj3": "Coming Soon..",
+        "copyright": "© 2025 Sebastian Rojas. All Rights Reserved."
+    }
+}

@@ -19,7 +19,7 @@ export default function Header() {
           {/* Navigation */}
           <nav className="flex space-x-4 sm:space-x-6 text-gray-800 text-xs sm:text-base md:text-lg">
             <a className="hover:text-gray-600" href="#">
-              Projects
+              Traducir
             </a>
             <a className="hover:text-gray-600" href="#">
               About
