@@ -3,10 +3,16 @@
 import styles from "./page.module.css";
 import dynamic from "next/dynamic";
 import Projects from "../components/Projects"
+
 const Scene = dynamic(() => import("../components/Scene"), {
   ssr: false,
-  loading: () => <p>Loading...</p> // Optional: Add a loading indicator
+  loading: () => (
+    <div className="flex items-center justify-center h-screen w-full">
+      <p className="text-lg font-semibold">Loading...</p>
+    </div>
+  )
 });
+
 
 
 

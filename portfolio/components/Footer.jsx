@@ -8,7 +8,10 @@ export default function Footer() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <footer className={`w-full px-6 py-12 bg-white shadow text-black transition-all border-t border-gray-200`}>
+    <footer 
+    id = "footer"
+    className={`w-full px-6 py-12 bg-white shadow text-black transition-all border-t border-gray-200`}
+    >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
         {/* Left Icon */}
         <div className="flex items-center justify-center md:justify-start">
