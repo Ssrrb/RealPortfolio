@@ -6,7 +6,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#">
+          <a href="https://www.sebastianrojas.lat/">
             <Image
               src="/signature.png"
               alt="Signature"
@@ -22,13 +22,13 @@ export default function Header() {
             {/* <a className="hover:text-gray-600" href="#">
               Traducir
             </a> */}
-            <a className="hover:text-gray-600" href="#">
+            <a className="hover:text-gray-600" href="https://www.sebastianrojas.lat/about">
               About
             </a>
-            <a className="hover:text-gray-600" href="#">
+            <a className="hover:text-gray-600" href="https://drive.google.com/file/d/1V_3O6arDD_0yRASmYLYseDg77FqYoZNm/view?usp=sharing">
               CV
             </a>
-            <a className="hover:text-gray-600" href="#">
+            <a className="hover:text-gray-600" href="#footer">
               Contact
             </a>
           </nav>
