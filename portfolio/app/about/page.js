@@ -18,7 +18,7 @@ export default function About() {
           </h1>
           <p className="text-base md:text-lg text-gray-700 max-w-2xl">
           I’m Sebastian Rojas, a Systems Analysis student at Universidad Católica de Asunción,
-           I also work at the intersection of software, automation, and AI-driven solutions.
+           I also work full-time in software, automation, and AI-driven solutions.
           </p>
         </div>
 
@@ -63,10 +63,10 @@ export default function About() {
               <p>
                 {/* Place your 'things I love' text here. */}
                 Software is transforming every company, and the key to success is rethinking data. 
-                By unlocking value through a data-driven culture of optimization, prediction, and automation, I help businesses—embrace world-class technology. 
+                By unlocking value through a data-driven culture of decisions through prediction, and automation, I help businesses—embrace world-class technology. 
                 But beyond technical skills, I value strong principles, clear communication, and teamwork. 
                 If you’re building something ambitious in AI, fintech, or automation and
-                want to connect with someone who challenges the status quo, let’s make it happen.
+                want to connect with someone who's ready, let’s make it happen.
               </p>
             </AccordionContent>
           </AccordionItem>

@@ -12,15 +12,16 @@ export default function Header() {
               alt="Signature"
               width={200}
               height={85}
-              className="object-contain w-32 sm:w-40 md:w-52"
+              className="object-contain max-w-[180px] sm:max-w-[200px] md:max-w-[240px] lg:max-w-[280px] w-auto h-auto"
             />
           </a>
 
           {/* Navigation */}
           <nav className="flex space-x-4 sm:space-x-6 text-gray-800 text-xs sm:text-base md:text-lg">
-            <a className="hover:text-gray-600" href="#">
+            {/* TODO: Enable next-intl */}
+            {/* <a className="hover:text-gray-600" href="#">
               Traducir
-            </a>
+            </a> */}
             <a className="hover:text-gray-600" href="#">
               About
             </a>
