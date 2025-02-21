@@ -34,7 +34,7 @@ export default function Footer() {
             <p className="text-sm font-semibold text-gray-700 mb-1">Projects</p>
             <ul className="mt-2 space-y-1">
               <li>Cert</li>
-              <li>Data Pipe</li>
+              <li>Generala</li>
               <li>Coming Soon..</li>
             </ul>
           </div>
