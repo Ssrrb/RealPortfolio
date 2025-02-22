@@ -29,7 +29,7 @@ export default function Home() {
       <header className="flex items-center justify-center py-5 border-b border-gray-200">
       </header>
       <header className="flex items-center justify-center py-5 border-b border-gray-200">
-      <h1 className="text-xl font-semibold tracking-wide">PROJECTS</h1>
+      <h1 className="text-xl font-semibold tracking-wide">PROYECTOS</h1>
       </header>
         <Projects />
       </div>

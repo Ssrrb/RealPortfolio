@@ -17,8 +17,8 @@ export default function About() {
             Sebastian Rojas
           </h1>
           <p className="text-base md:text-lg text-gray-700 max-w-2xl">
-          I’m Sebastian Rojas, a Systems Analysis student at Universidad Católica de Asunción,
-           I also work full-time in software, automation, and AI-driven solutions.
+          Soy Sebastián Rojas, estudiante de Análisis de Sistemas en la Universidad Católica de Asunción. También trabajo en la intersección entre software, automatización y soluciones impulsadas por IA.
+
           </p>
         </div>
 
@@ -30,26 +30,25 @@ export default function About() {
         >
           <AccordionItem value="background">
             <AccordionTrigger className="py-3 text-lg font-medium text-left border-b border-gray-300 flex justify-between items-center">
-              Background
+              Formacion
             </AccordionTrigger>
             <AccordionContent className="text-base md:text-lg text-gray-700 max-w-2xl">
               <p>
                 {/* Place your background text here. For example: */}
-                Born and raised in Asunción, Paraguay, I’ve always been driven by problem-solving and meaningful impact. My perspective shifted when I realized that technology is where algorithms meet people. 
-                The right innovation, built by the right minds, doesn’t just fix a problem—it scales, transforms industries, and empowers communities
+                Nacido y criado en Asunción, Paraguay, siempre me ha impulsado la resolución de problemas y generar un impacto significativo. Mi perspectiva cambió cuando comprendí que la tecnología es el punto donde los algoritmos se encuentran con las personas. La innovación adecuada, creada por las mentes adecuadas, no solo soluciona un problema, sino que escala, transforma industrias y empodera comunidades.
               </p>
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="my-work">
             <AccordionTrigger className="py-3 text-lg font-medium text-left border-b border-gray-300 flex justify-between items-center">
-            How I Build and Think
+            Cómo Construyo y Pienso
             </AccordionTrigger>
             <AccordionContent className="text-base md:text-lg text-gray-700 max-w-2xl">
               <p>
+              Los mejores creadores no solo piensan, también construyen. Incluso las mejores ideas no valen nada sin ejecución. Por eso, me mantengo siempre como estudiante y trabajador, experimentando, iterando y refinando. La única manera de aprender verdaderamente es construir, romper y reconstruir.
+
                 {/* Place your design philosophy text here. */}
-                The best creators aren’t just thinkers—they are also builders. Even the greatest ideas are worthless without execution. That’s why I stay both a student and worker experimenting, iterating, and refining. 
-                The only way to truly learn is to build, break, and rebuild.
 
               </p>
             </AccordionContent>
@@ -57,16 +56,12 @@ export default function About() {
 
           <AccordionItem value="tech, people and impact">
             <AccordionTrigger className="py-3 text-lg font-medium text-left border-b border-gray-300 flex justify-between items-center">
-            Technology, People, and Impact
+            Tecnología, Personas e Impacto
             </AccordionTrigger>
             <AccordionContent className="text-base md:text-lg text-gray-700 max-w-2xl">
               <p>
                 {/* Place your 'things I love' text here. */}
-                Software is transforming every company, and the key to success is rethinking data. 
-                By unlocking value through a data-driven culture of decisions through prediction, and automation, I help businesses—embrace world-class technology. 
-                But beyond technical skills, I value strong principles, clear communication, and teamwork. 
-                If you’re building something ambitious in AI, fintech, or automation and
-                want to connect with someone who's ready, let’s make it happen.
+                El software está transformando todas las empresas, y la clave del éxito es replantear el uso de los datos. Al desbloquear valor a través de una cultura basada en datos, optimización, predicción y automatización, ayudo a las empresas a adoptar tecnología de clase mundial. Pero más allá de las habilidades técnicas, valoro los principios sólidos, la comunicación clara y el trabajo en equipo. Si estás construyendo algo ambicioso en IA, fintech o automatización y buscas conectar con alguien que desafía lo normal, contactame
               </p>
             </AccordionContent>
           </AccordionItem>

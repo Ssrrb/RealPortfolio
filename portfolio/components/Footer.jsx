@@ -31,7 +31,7 @@ export default function Footer() {
         {/* Craft & Contact Sections */}
         <div className="flex justify-between md:justify-center md:space-x-40">
           <div>
-            <p className="text-sm font-semibold text-gray-700 mb-1">Projects</p>
+            <p className="text-sm font-semibold text-gray-700 mb-1">Proyectos</p>
             <ul className="mt-2 space-y-1">
               <li>Cert</li>
               <li>Generala</li>
@@ -39,7 +39,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="text-sm font-semibold text-gray-700 mb-1">Contact</p>
+            <p className="text-sm font-semibold text-gray-700 mb-1">Contacto</p>
             <ul className="mt-2 space-y-1">
               <li><a href="https://www.linkedin.com/in/sebastian-rojas-28674a303/" className="hover:underline">LinkedIn↗</a></li>
               <li><a href="https://github.com/Ssrrb" className="hover:underline">GitHub↗</a></li>
@@ -50,7 +50,7 @@ export default function Footer() {
 
         {/* Theme Toggle & Copyright */}
         <div className="flex flex-col items-center md:items-end">
-          <p className="mt-4 text-xs">© 2025 Sebastian Rojas. All Rights Reserved.</p>
+          <p className="mt-4 text-xs">© 2025 Sebastian Rojas. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

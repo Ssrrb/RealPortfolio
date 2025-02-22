@@ -24,14 +24,14 @@ export default function Header() {
             {/* <a className="hover:text-gray-600" href="#">
               Traducir
             </a> */}
-            <a className="hover:text-gray-600" href="https://www.sebastianrojas.lat/about">
-              About
+            <a className="hover:text-gray-600" href="/about">
+              Acerca
             </a>
             <a className="hover:text-gray-600" href="https://drive.google.com/file/d/1V_3O6arDD_0yRASmYLYseDg77FqYoZNm/view?usp=sharing">
               CV
             </a>
             <a className="hover:text-gray-600" href="#footer">
-              Contact
+              Contacto
             </a>
           </nav>
         </div>

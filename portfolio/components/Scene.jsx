@@ -26,7 +26,7 @@ export default function Index() {
 
   return (
     <Canvas style={{ width: '100%', height: height, background: '#ffffff' }}>
-      <directionalLight intensity={3} position={[0, 1, 0]} />
+      <directionalLight intensity={3} position={[0, 0, 0]} />
       <Environment preset="city" />
       <Model /> {/* Add the Model to the scene */}
     </Canvas>

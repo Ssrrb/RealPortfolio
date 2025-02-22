@@ -1,42 +1,58 @@
 import React, { useRef } from 'react';
-import { useGLTF, Text } from "@react-three/drei";
+import { useGLTF, Text } from '@react-three/drei';
 import { useFrame, useThree } from '@react-three/fiber';
 import { MeshTransmissionMaterial } from "@react-three/drei";
-import * as THREE from 'three';
-import { Leva, useControls } from 'leva';
 
-    export default function Model() {
-        const { scene, viewport } = useThree();
-        const torus = useRef(null);
-        const { nodes } = useGLTF("/medias/torrus.glb");
+export default function Model() {
+  const { viewport } = useThree();
+  const torus = useRef(null);
+  const { nodes } = useGLTF("/medias/torrus.glb");
 
-        Leva({hidden:true});
-        const materialProps = useControls({
-            thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
-            roughness: { value: 0, min: 0, max: 0, step: 0.1 },
-            metalness: {value: 4 },
-            transmission: {value: 0.8, min: 0, max: 1, step: 0.1},
-            ior: { value: 2.3, min: 0, max: 3, step: 0.1 },
-            chromaticAberration: { value: 0.02, min: 0, max: 1},
-            backside: { value: true},
-        })
+  // Compute a consistent scale factor based on the smaller viewport dimension.
+  // Adjust the divisor (e.g., 10) to fine-tune your desired model size.
+  const scaleFactor = Math.min(viewport.width, viewport.height) / 3.5;
 
-        useFrame( () => {
-            torus.current.rotation.x += 0.005
-            torus.current.rotation.y += 0.005
-        })
-
-        return (
-            <group scale={viewport.width/13} >
-                <Text fontSize={0.2} color="gray" position={[0, 1.5, 0]} style={{ fontWeight: 'bold', fontStyle: 'italic', fontSize: '0.75rem', fontWeight: '600', color: 'rgb(107 114 128)', marginBottom: '0.25rem' }}>
-                    SOFTWARE ENGINEER
-                </Text>
-                <Text fontSize={0.9} color="black" style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}>
-                    SEBASTIAN ROJAS
-                </Text>
-                <mesh ref={torus} {...nodes.Cube} geometry={nodes.Cube.geometry} position={[0,0,0]}>
-                    <MeshTransmissionMaterial {...materialProps}/>
-                </mesh>
-            </group>
-        )
+  useFrame(() => {
+    if (torus.current) {
+      torus.current.rotation.x += 0.005;
+      torus.current.rotation.y += 0.005;
     }
+  });
+
+  return (
+    <group scale={scaleFactor}>
+      <Text 
+        fontSize={0.2} 
+        color="gray" 
+        position={[0, 1.4, 0]} 
+        style={{ 
+          fontWeight: '600', 
+          fontStyle: 'italic', 
+          color: 'rgb(107 114 128)', 
+        }}
+      >
+        SOFTWARE ENGINEER
+      </Text>
+      <Text 
+        fontSize={0.4} 
+        color="black" 
+        style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}
+        position={[0, 0.4, 0]}
+      >
+        SEBASTIAN ROJAS
+      </Text>
+      <mesh ref={torus} {...nodes.Cube} geometry={nodes.Cube.geometry} position={[0, 0.2, 0]}>
+        <MeshTransmissionMaterial {...{
+          thickness: 0.2,
+          roughness: 0,
+          metalness: 4,
+          transmission: 0.8,
+          ior: 2.3,
+          chromaticAberration: 0.02,
+          backside: true,
+          depthWrite:false
+        }}/>
+      </mesh>
+    </group>
+  );
+}
