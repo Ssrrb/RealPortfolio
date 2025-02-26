@@ -10,7 +10,7 @@ export default function Model() {
 
   // Compute a consistent scale factor based on the smaller viewport dimension.
   // Adjust the divisor (e.g., 10) to fine-tune your desired model size.
-  const scaleFactor = Math.min(viewport.width, viewport.height) / 3.5;
+  const scaleFactor = Math.min(viewport.width, viewport.height) / 4;
 
   useFrame(() => {
     if (torus.current) {
@@ -24,7 +24,7 @@ export default function Model() {
       <Text 
         fontSize={0.2} 
         color="gray" 
-        position={[0, 1.4, 0]} 
+        position={[0, 1.2, 0]} 
         style={{ 
           fontWeight: '600', 
           fontStyle: 'italic', 
@@ -37,11 +37,11 @@ export default function Model() {
         fontSize={0.4} 
         color="black" 
         style={{ fontFamily: 'NeueMontreal', fontWeight: 'bold', fontStyle: 'italic' }}
-        position={[0, 0.4, 0]}
+        position={[0, 0.2, 0]}
       >
         SEBASTIAN ROJAS
       </Text>
-      <mesh ref={torus} {...nodes.Cube} geometry={nodes.Cube.geometry} position={[0, 0.2, 0]}>
+      <mesh ref={torus} {...nodes.Cube} geometry={nodes.Cube.geometry} position={[0, 0, 0]}>
         <MeshTransmissionMaterial {...{
           thickness: 0.2,
           roughness: 0,

@@ -61,3 +61,18 @@ This project is a personal portfolio website built with Next.js, Three.js, and T
 ## Contact
 
 For questions or feedback, please contact me at [sirsebastianrojas@gmail.com](mailto:sirsebastianrojas@gmail.com).
+
+## 🚀 Cómo Actualizar el Portfolio
+
+Sigue estos pasos para actualizar y desplegar tu portfolio en Google Cloud:
+
+### 1️⃣ Construir el Contenedor Localmente
+Ejecuta el siguiente comando en la raíz del proyecto para construir la imagen Docker:
+```sh
+docker build -t my-next-app .
+
+gcloud auth login
+
+gcloud config set project "portfolio-448819"
+
+gcloud builds submit --region=us-central1 --tag us-central1-docker.pkg.dev/portfolio-448819/my-repo/portfolio-fixed-beta:tag1

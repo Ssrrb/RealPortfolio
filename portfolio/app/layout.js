@@ -5,8 +5,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Sebastian R. Rojas - Portfolio",
-  description: "My personal portfolio showcasing projects & experience",
+  title: "Sebastian R. Rojas - Portafolio",
+  description: "Un poco de lo que hago y como pienso",
 };
 
 export default function RootLayout({ children }) {
